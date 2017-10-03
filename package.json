@@ -1,0 +1,23 @@
+{
+  "name": "oaex-node-liqui",
+  "version": "1.0.0",
+  "description": "Node.js client for Liqui crypto currency exchange",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-asset-exchange/oaex-node-liqui.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/open-asset-exchange/oaex-node-liqui/issues"
+  },
+  "homepage": "https://github.com/open-asset-exchange/oaex-node-liqui#readme",
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  }
+}

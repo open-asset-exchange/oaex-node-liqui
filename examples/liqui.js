@@ -1,21 +1,4 @@
-## Oaex Liqui Client
-
-Node.js client for Liqui crypto currency exchange.
-
-## Prerequisites
-
-Node.js 8.0 or later.
-
-## Installation
-
-```bash
-    npm install oaex-liqui
-```
-
-## Usage
-
-```js
-const Liqui = require('oaex-liqui')
+const Liqui = require('../')
 
 let liqui = new Liqui({
   key: 'YOUR_KEY',
@@ -56,4 +39,3 @@ let liqui = new Liqui({
   let tradeHistory = await tradeHistory()
   console.log(tradeHistory)
 })()
-```

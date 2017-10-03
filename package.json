@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/open-asset-exchange/oaex-node-liqui/issues"
   },
-  "homepage": "http://oaex.trade",
+  "homepage": "https://open-asset-exchange.github.io/oaex-website/",
   "dependencies": {
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5"

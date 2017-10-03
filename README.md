@@ -8,8 +8,8 @@ Node.js 8.0 or later.
 
 ## Installation
 
-```bash
-    npm install oaex-liqui
+```
+npm install oaex-liqui
 ```
 
 ## Usage

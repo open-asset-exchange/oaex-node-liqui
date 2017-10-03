@@ -1,6 +1,6 @@
 {
   "name": "oaex-liqui",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Node.js client for Liqui crypto currency exchange",
   "main": "index.js",
   "scripts": {

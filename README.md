@@ -1,5 +1,10 @@
 ## Oaex Liqui Client
 
+[![npm version](http://img.shields.io/npm/v/oaex-liqui.svg)](https://npmjs.org/package/oaex-liqui)
+[![Dependencies Status](https://david-dm.org/open-asset-exchange/oaex-node-liqui.svg)](https://david-dm.org/open-asset-exchange/oaex-node-liqui)
+[![Node version](https://img.shields.io/node/v/oaex-liqui.svg?style=flat)](http://nodejs.org/download/)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/open-asset-exchange/oaex-node-liqui)
+
 Node.js client for Liqui crypto currency exchange.
 
 ## Prerequisites

@@ -21,7 +21,7 @@ let liqui = new Liqui({
   let accountInfo = await liqui.getInfo()
   console.log(accountInfo)
 
-  let trade = await liqui.trade('btc_eth', 'buy', '0.01', '0.01')
+  let trade = await liqui.trade('btc_eth', 'buy', 0.01, 0.01)
   console.log(trade)
 
   let orders = await liqui.activeOrders('eth_btc')

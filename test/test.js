@@ -2,7 +2,13 @@ require('chai').should()
 
 const Liqui = require('../')
 
-let liqui = new Liqui()
+let key = process.env.key
+let secret = process.env.secret
+
+let liqui = new Liqui({
+  key,
+  secret
+})
 
 describe('Liqui', () => {
   it('info', async () => {
@@ -26,29 +32,23 @@ describe('Liqui', () => {
   })
 
   it('getInfo', async () => {
-    let privateInfo = await liqui.getInfo('eth_btc')
+    let privateInfo = await liqui.getInfo()
     privateInfo.should.not.null
   })
 
   it('trade', async () => {
-    let trade = await liqui.trade('eth_btc')
+    let trade = await liqui.trade('eth_btc', 'buy', 0.01, 0.01)
     trade.should.not.null
-  })
 
-  it('activeOrders', async () => {
     let orders = await liqui.activeOrders('eth_btc')
     orders.should.not.null
-  })
-
-  it('orderInfo', async () => {
-    let order = await liqui.orderInfo(1234)
+    
+    let order = await liqui.orderInfo(trade.order_id)
     order.should.not.null
-  })
-
-  it('cancelOrder', async () => {
-    let canceledOrder = await liqui.cancelOrder(1234)
+    
+    let canceledOrder = await liqui.cancelOrder(trade.order_id)
     canceledOrder.should.not.null
-  })
+  }).timeout(10000)
 
   it('tradeHistory', async () => {
     let history = await liqui.tradeHistory()
